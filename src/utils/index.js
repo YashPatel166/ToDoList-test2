@@ -1,10 +1,10 @@
-export { formatDate } from './formatDate';
+export { formatDate, formatRelativeTime } from './formatDate';
 export { formatCurrency } from './formatCurrency';
 export { formatNumber } from './formatNumber';
 export { truncate } from './truncate';
 export { capitalize } from './capitalize';
 export { slugify } from './slugify';
-export { validateEmail } from './validateEmail';
+export { validateEmail, validateEmailDomain } from './validateEmail';
 export { validatePhone } from './validatePhone';
 export { validateURL } from './validateURL';
 export { debounce } from './debounce';

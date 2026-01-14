@@ -10,13 +10,79 @@
   font-size: 0.875rem;
 }
 
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
 .input-field {
+  flex: 1;
   padding: 0.75rem 1rem;
   border: 2px solid #e9ecef;
   border-radius: 8px;
   font-size: 1rem;
   transition: all 0.3s ease;
   outline: none;
+  width: 100%;
+}
+
+.input-wrapper.input-focused .input-field {
+  border-color: #667eea;
+}
+
+.input-wrapper.input-error-wrapper .input-field {
+  border-color: #dc3545;
+}
+
+.input-icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  color: #6c757d;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.input-icon-left {
+  left: 1rem;
+}
+
+.input-icon-right {
+  right: 1rem;
+}
+
+.input-wrapper .input-field {
+  padding-left: 2.5rem;
+}
+
+.input-wrapper .input-icon-right ~ .input-field {
+  padding-left: 1rem;
+  padding-right: 2.5rem;
+}
+
+.input-clear {
+  position: absolute;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #6c757d;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  z-index: 2;
+}
+
+.input-clear:hover {
+  background: #f8f9fa;
+  color: #212529;
 }
 
 .input-field:focus {

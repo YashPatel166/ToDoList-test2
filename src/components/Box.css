@@ -1,0 +1,36 @@
+.box {
+  width: 100%;
+}
+
+.box-padding-none {
+  padding: 0;
+}
+
+.box-padding-small {
+  padding: 0.5rem;
+}
+
+.box-padding-medium {
+  padding: 1rem;
+}
+
+.box-padding-large {
+  padding: 2rem;
+}
+
+.box-margin-none {
+  margin: 0;
+}
+
+.box-margin-small {
+  margin: 0.5rem;
+}
+
+.box-margin-medium {
+  margin: 1rem;
+}
+
+.box-margin-large {
+  margin: 2rem;
+}
+

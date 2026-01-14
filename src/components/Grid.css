@@ -1,0 +1,23 @@
+.grid {
+  display: grid;
+  width: 100%;
+}
+
+.grid-gap-small {
+  gap: 0.5rem;
+}
+
+.grid-gap-medium {
+  gap: 1rem;
+}
+
+.grid-gap-large {
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+

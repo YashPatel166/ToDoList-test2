@@ -1,0 +1,35 @@
+.divider-horizontal {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 1.5rem 0;
+  position: relative;
+}
+
+.divider-horizontal::before {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #e9ecef;
+}
+
+.divider-horizontal::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #e9ecef;
+}
+
+.divider-text {
+  padding: 0 1rem;
+  color: #6c757d;
+  font-size: 0.875rem;
+}
+
+.divider-vertical {
+  width: 1px;
+  height: 100%;
+  background: #e9ecef;
+  margin: 0 1rem;
+}
+

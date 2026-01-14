@@ -1,0 +1,21 @@
+.image-wrapper {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa;
+  color: #6c757d;
+  padding: 2rem;
+  min-height: 100px;
+}
+

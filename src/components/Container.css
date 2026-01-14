@@ -1,0 +1,26 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.container-sm {
+  max-width: 576px;
+}
+
+.container-md {
+  max-width: 768px;
+}
+
+.container-lg {
+  max-width: 992px;
+}
+
+.container-xl {
+  max-width: 1200px;
+}
+
+.container-fluid {
+  max-width: 100%;
+}
+

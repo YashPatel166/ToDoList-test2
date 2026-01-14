@@ -1,0 +1,55 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-trigger {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  min-width: 200px;
+  z-index: 1000;
+  animation: slideDown 0.2s ease;
+  overflow: hidden;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-bottom-left {
+  top: 100%;
+  left: 0;
+  margin-top: 0.5rem;
+}
+
+.dropdown-bottom-right {
+  top: 100%;
+  right: 0;
+  margin-top: 0.5rem;
+}
+
+.dropdown-top-left {
+  bottom: 100%;
+  left: 0;
+  margin-bottom: 0.5rem;
+}
+
+.dropdown-top-right {
+  bottom: 100%;
+  right: 0;
+  margin-bottom: 0.5rem;
+}
+

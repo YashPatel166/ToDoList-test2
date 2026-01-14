@@ -1,0 +1,56 @@
+.accordion {
+  width: 100%;
+}
+
+.accordion-item {
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background: #f8f9fa;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.accordion-header:hover {
+  background: #e9ecef;
+}
+
+.accordion-header.active {
+  background: #667eea;
+  color: white;
+}
+
+.accordion-icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.accordion-content {
+  padding: 1.5rem;
+  background: white;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 500px;
+  }
+}
+
